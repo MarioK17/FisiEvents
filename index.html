@@ -4,7 +4,7 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
     <style>
       .navbar {
           margin-bottom: 0;     
@@ -19,10 +19,25 @@
         color: #f4511e  !important;
         background-color: #fff !important;
     	}
+
+    	.lista-eventos {
+    		transition: box-shadow 0.5s;
+    		padding-top: 20px;
+    		
+    		padding-bottom: 20px;
+    		border: 1px solid rgba(133, 20, 75, 0.1);
+    		
+    	}
+
+    	
+    	.lista-eventos:hover {
+   			 box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.44);
+		}
+
     </style>
-  </head>
-  <body>
-    <div class="navbar navbar-default navbar-static-top"> <!-- NAVBAR -->
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <!-- NAVBAR -->
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
@@ -31,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><img height="50" alt="Brand" src="../imagenes/logo.png" class="center-block "></a>
+          <a class="navbar-brand"><img height="50" alt="Brand" src="imagenes/logo.png" class="center-block "></a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-ex-collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -47,13 +62,13 @@
           </ul>
         </div>
       </div>
-    </div> <!-- FIN NAVBAR -->
-  
-    <div class="cover"> 
-      <div class="background-image-fixed cover-image" style="background-image : url('../imagenes/estudiando2.jpg')"></div>
+    </div>
+    <!-- FIN NAVBAR -->
+    <div class="cover">
+      <div class="background-image-fixed cover-image" style="background-image : url('imagenes/estudiando2.jpg')"></div>
       <div class="container">
         <div class="row">
-          <div 	class="col-md-12 text-center">
+          <div class="col-md-12 text-center">
             <h1>FisiEvents</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
             <br>
@@ -63,7 +78,8 @@
         </div>
       </div>
     </div>
-    <div class="section "> <!-- BUSCAR EVENTO -->
+    <div class="section ">
+      <!-- BUSCAR EVENTO -->
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -99,10 +115,11 @@
           </div>
         </div>
       </div>
-    </div> <!--FIN BUSCAR EVENTO -->
-
-    <div class="section"> <!-- QUE ES FISIEVENTS -->
-      <div class="container"> 
+    </div>
+    <!--FIN BUSCAR EVENTO -->
+    <div class="section">
+      <!-- QUE ES FISIEVENTS -->
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h1 class="text-center" style="padding-bottom: 30px">¿Que es Fisi Events?</h1>
@@ -113,10 +130,12 @@
           </div>
         </div>
       </div>
-    </div>  <!-- FIN QUE ES FISIEVENTS -->
-
-    <div class="section section-info"> <!-- DESCRIPCION -->
-    <div class="background-image background-image-fixed" style="background-image : url('../imagenes/estudiando2.jpg')"></div> <div class="container"> 
+    </div>
+    <!-- FIN QUE ES FISIEVENTS -->
+    <div class="section section-info">
+      <!-- DESCRIPCION -->
+      <div class="background-image background-image-fixed" style="background-image : url('imagenes/estudiando2.jpg')"></div>
+      <div class="container">
         <div class="row">
           <div class="col-md-5">
             <ul class="lead list-unstyled">
@@ -133,18 +152,19 @@
             </ul>
           </div>
           <div class="col-md-3 col-md-offset-1">
-            <img src="../imagenes/estudiando.jpg" class="img-responsive" style="padding-bottom: 30px;">
-            <img src="../imagenes/taller.png" class="img-responsive">
+            <img src="imagenes/estudiando.jpg" class="img-responsive" style="padding-bottom: 30px;">
+            <img src="imagenes/taller.png" class="img-responsive">
           </div>
           <div class="col-md-3" style="padding-left: 0px;">
-            <img src="../imagenes/conferencia.jpg" style="padding-bottom: 30px;" class="img-responsive">
-            <img src="../imagenes/clases.jpg" class="img-responsive">
+            <img src="imagenes/conferencia.jpg" style="padding-bottom: 30px;" class="img-responsive">
+            <img src="imagenes/clases.jpg" class="img-responsive">
           </div>
         </div>
       </div>
-    </div> <!-- FIN DESCRIPCION -->
-
-    <div class="section"> <!-- EVENTOS --> 
+    </div>
+    <!-- FIN DESCRIPCION -->
+    <div class="section">
+      <!-- EVENTOS -->
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -152,42 +172,42 @@
               <!-- Nav tabs -->
               <ul class="nav nav-justified nav-tabs" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#home" aria-controls="home" role="tab" data-toggle="tab">EVENTOS PROXIMOS</a>
+                  <a href="#home" aria-controls="home" role="tab" data-toggle="tab"><strong>EVENTOS PROXIMOS</strong></a>
                 </li>
                 <li role="presentation">
-                  <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">EVENTOS POPULARES</a>
+                  <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><strong>EVENTOS POPULARES</strong></a>
                 </li>
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="home">
                   <div class="row" style="padding-top:30px;">
-                    <div class="col-md-3">
-                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                    <div class="col-md-3  lista-eventos">
+                      <img src="imagenes/estudiando.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/clases.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/estudiando.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/clases.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
@@ -198,32 +218,32 @@
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="profile">
                   <div class="row" style="padding-top:30px">
-                    <div class="col-md-3">
-                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/clases.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/estudiando.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/clases.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
                         <br>Ut enim ad minim veniam, quis nostrud</p>
                       <a class="btn btn-block btn-primary">Suscribirte</a>
                     </div>
-                    <div class="col-md-3">
-                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                    <div class="col-md-3 lista-eventos">
+                      <img src="imagenes/estudiando.jpg" class="img-responsive">
                       <h2 class="text-center">Nombre del evento</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
                         <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
@@ -236,14 +256,13 @@
             </div>
           </div>
         </div>
-      </div>   
-    </div> <!-- FIN EVENTOS --> 
-
-    
-
-    <div class="section section-info"> <!-- COMO EMPIEZO -->
-      <div class="background-image background-image-fixed" style="background-image : url('../imagenes/taller.png')"></div>
-      <div class="container"> 
+      </div>
+    </div>
+    <!-- FIN EVENTOS -->
+    <div class="section section-info">
+      <!-- COMO EMPIEZO -->
+      <div class="background-image background-image-fixed" style="background-image : url('imagenes/taller.png')"></div>
+      <div class="container">
         <div class="row" style="padding-top:15px; padding-bottom: 15px;">
           <div class="col-md-12 text-center">
             <h1>¿Como empiezo?</h1>
@@ -272,10 +291,11 @@
           </div>
         </div>
       </div>
-    </div> <!-- FIN COMO EMPIEZO -->
-
-    <div class="section"><!-- EQUIPO -->
-      <div class="container"> 
+    </div>
+    <!-- FIN COMO EMPIEZO -->
+    <div class="section">
+      <!-- EQUIPO -->
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h1 class="text-center">Equipo</h1>
@@ -284,14 +304,14 @@
         </div>
         <div class="row">
           <div class="col-md-2">
-            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+            <img src="imagenes/persona.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4">
             <h3 class="text-left">Kevin</h3>
             <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
           </div>
           <div class="col-md-2">
-            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+            <img src="imagenes/persona.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4">
             <h3 class="text-left">Mario</h3>
@@ -300,14 +320,14 @@
         </div>
         <div class="row">
           <div class="col-md-2">
-            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+            <img src="imagenes/persona.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4">
             <h3 class="text-left">Renzo</h3>
             <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
           </div>
           <div class="col-md-2">
-            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+            <img src="imagenes/persona.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4 text-center">
             <h3 class="text-left">Kath</h3>
@@ -315,11 +335,12 @@
           </div>
         </div>
       </div>
-    </div> <!-- FIN EQUIPO -->
-
-    <footer class="section section-info"> <!-- FOOTER -->
-    <div class="background-image background-image-fixed" style="background-image : url('../imagenes/taller.png')"></div>
-      <div class="container"> 
+    </div>
+    <!-- FIN EQUIPO -->
+    <footer class="section section-info">
+      <!-- FOOTER -->
+      <div class="background-image background-image-fixed" style="background-image : url('imagenes/taller.png')"></div>
+      <div class="container">
         <div class="row">
           <div class="col-sm-6">
             <h1>Footer header</h1>
@@ -351,9 +372,8 @@
           </div>
         </div>
       </div>
-    </footer> <!-- FIN FOOTER -->
- 
- 
+    </footer>
+    <!-- FIN FOOTER -->
+  
 
-</body>
-</html>
+</body></html>
