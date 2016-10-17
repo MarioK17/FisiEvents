@@ -1,0 +1,359 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+    <style>
+      .navbar {
+          margin-bottom: 0;     
+          z-index: 9999;
+          border: 0;
+          font-size: 14px !important;
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+    	}
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #f4511e  !important;
+        background-color: #fff !important;
+    	}
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top"> <!-- NAVBAR -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><img height="50" alt="Brand" src="../imagenes/logo.png" class="center-block "></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">EVENTOS</a>
+            </li>
+            <li>
+              <a href="#">REGISTRARSE</a>
+            </li>
+            <li>
+              <a href="/login">LOGIN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- FIN NAVBAR -->
+  
+    <div class="cover"> 
+      <div class="background-image-fixed cover-image" style="background-image : url('../imagenes/estudiando2.jpg')"></div>
+      <div class="container">
+        <div class="row">
+          <div 	class="col-md-12 text-center">
+            <h1>FisiEvents</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
+            <br>
+            <br>
+            <a class="btn btn-lg btn-default">Descubre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section "> <!-- BUSCAR EVENTO -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control" id="inputEmail3" placeholder="Busca tu evento">
+                  <span class="input-group-btn">
+                    <a class="btn btn-default" type="submit"><i class="board-o et-right fa fa-fw fa-search"></i></a>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <input type="date" class="form-control" id="inputPassword3" placeholder="mm/dd/yyyy">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <select class="form-control input-sm" id="sel1">
+                    <option>Todas las categorias...</option>
+                    <option value="1">Conferencia</option>
+                    <option value="2">Taller</option>
+                    <option value="3">Musica</option>
+                    <option value="4">Deporte</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-lg btn-primary">Encuentra!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!--FIN BUSCAR EVENTO -->
+
+    <div class="section"> <!-- QUE ES FISIEVENTS -->
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center" style="padding-bottom: 30px">¿Que es Fisi Events?</h1>
+            <p class="lead text-center" style="padding-bottom: 10px">Fisi events es una plataforma para crear y suscribirte a eventos dentro
+              de la facultad.Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+        </div>
+      </div>
+    </div>  <!-- FIN QUE ES FISIEVENTS -->
+
+    <div class="section section-info"> <!-- DESCRIPCION -->
+    <div class="background-image background-image-fixed" style="background-image : url('../imagenes/estudiando2.jpg')"></div> <div class="container"> 
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="lead list-unstyled">
+              <li style="padding-top:15px; padding-bottom:15px">
+                <i class="fa fa-fw board-o fa-lg et-right fa-hand-o-right"></i>¿Quieres dar clases de matemáticas?</li>
+              <li style="padding-top:15px; padding-bottom:15px">
+                <i class="fa fa-fw board-o fa-lg et-right fa-hand-o-right"></i>¿Quieres dar un taller de python?</li>
+              <li style="padding-top:15px; padding-bottom:15px">
+                <i class="fa fa-fw board-o fa-lg et-right fa-hand-o-right"></i>¿Quieres dar un aviso de trabajo para los estudiantes?</li>
+              <li style="padding-top:15px; padding-bottom:15px">
+                <i class="fa fa-fw board-o fa-lg et-right fa-hand-o-right"></i>¿Quieres dar una conferencia con tu experiencia en cierto rubro?</li>
+              <li style="padding-top:15px; padding-bottom:15px">
+                <i class="fa fa-fw board-o fa-lg et-right fa-hand-o-right"></i>¿Quieres hacer una convocatoria para un grupo de investigacion?</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <img src="../imagenes/estudiando.jpg" class="img-responsive" style="padding-bottom: 30px;">
+            <img src="../imagenes/taller.png" class="img-responsive">
+          </div>
+          <div class="col-md-3" style="padding-left: 0px;">
+            <img src="../imagenes/conferencia.jpg" style="padding-bottom: 30px;" class="img-responsive">
+            <img src="../imagenes/clases.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div> <!-- FIN DESCRIPCION -->
+
+    <div class="section"> <!-- EVENTOS --> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <!-- Nav tabs -->
+              <ul class="nav nav-justified nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#home" aria-controls="home" role="tab" data-toggle="tab">EVENTOS PROXIMOS</a>
+                </li>
+                <li role="presentation">
+                  <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">EVENTOS POPULARES</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                  <div class="row" style="padding-top:30px;">
+                    <div class="col-md-3">
+                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                  <div class="row" style="padding-top:30px">
+                    <div class="col-md-3">
+                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/clases.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="../imagenes/estudiando.jpg" class="img-responsive">
+                      <h2 class="text-center">Nombre del evento</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                        <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                        <br>Ut enim ad minim veniam, quis nostrud</p>
+                      <a class="btn btn-block btn-primary">Suscribirte</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div> <!-- FIN EVENTOS --> 
+
+    
+
+    <div class="section section-info"> <!-- COMO EMPIEZO -->
+      <div class="background-image background-image-fixed" style="background-image : url('../imagenes/taller.png')"></div>
+      <div class="container"> 
+        <div class="row" style="padding-top:15px; padding-bottom: 15px;">
+          <div class="col-md-12 text-center">
+            <h1>¿Como empiezo?</h1>
+          </div>
+        </div>
+        <div class="row" style="padding-top:15px; padding-bottom: 30px;">
+          <div class="col-md-3 text-center">
+            <h2>Paso 1</h2>
+            <i class="fa fa-5x fa-fw fa-keyboard-o m-y-3" style="padding-top:30px;padding-bottom: 30px"></i>
+            <p class="lead">Registrate</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <h2>Paso 2</h2>
+            <i class="board-o fa fa-5x fa-fw fa-magic m-y-3" style="padding-top:30px;padding-bottom: 30px"></i>
+            <p class="lead">Crea un evento</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <h2>Paso 3</h2>
+            <i class="board-o fa fa-5x fa-angellist fa-fw m-y-3" style="padding-top:30px;padding-bottom: 30px"></i>
+            <p class="lead">O unete a un evento</p>
+          </div>
+          <div class="col-md-3 text-center">
+            <h2>Paso 4</h2>
+            <i class="board-o fa fa-5x fa-child fa-fw m-y-3" style="padding-top:30px;padding-bottom: 30px"></i>
+            <p class="lead">Disfruta!</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- FIN COMO EMPIEZO -->
+
+    <div class="section"><!-- EQUIPO -->
+      <div class="container"> 
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">Equipo</h1>
+            <p class="text-center">Somos un equipo con muchas habilidades</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-left">Kevin</h3>
+            <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+          </div>
+          <div class="col-md-2">
+            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-left">Mario</h3>
+            <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-left">Renzo</h3>
+            <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+          </div>
+          <div class="col-md-2">
+            <img src="../imagenes/persona.jpg" class="img-circle img-responsive">
+          </div>
+          <div class="col-md-4 text-center">
+            <h3 class="text-left">Kath</h3>
+            <p class="text-left">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- FIN EQUIPO -->
+
+    <footer class="section section-info"> <!-- FOOTER -->
+    <div class="background-image background-image-fixed" style="background-image : url('../imagenes/taller.png')"></div>
+      <div class="container"> 
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- FIN FOOTER -->
+ 
+ 
+
+</body>
+</html>
