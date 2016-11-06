@@ -6,21 +6,22 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/w3.css" type="text/css">
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="css/w3-theme-red.css" rel="stylesheet" type="text/css">
     <style>
       .navbar {
-                	          margin-bottom: 0;     
-                	          z-index: 9999;
-                	          border: 3;
-                	          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                	          font-size: 14px !important;
-                	          line-height: 1.42857143 !important;
-                	          letter-spacing: 4px;
-                	          border-radius: 0;
-                	    	}
-                	      .navbar-nav li a:hover, .navbar-nav li.active a {
-                	        color: #f4511e  !important;
-                	        background-color: #fff !important;
-                    	}
+          margin-bottom: 0;     
+          z-index: 9999;
+          border: 3;
+          box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          font-size: 14px !important;s
+          line-height: 1.42857143 !important;
+          letter-spacing: 4px;
+          border-radius: 0;
+    	}
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #f4511e  !important;
+        background-color: #fff !important;
+	}
     </style>
   </head><body>
     <div class="navbar navbar-default navbar-static-top">
@@ -57,29 +58,29 @@
       </div>
     </div>
     <!-- FIN NAVBAR -->
-    <div class="section w3-light-grey">
+    <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <div class="jumbotron">
-              <img src="https://placehold.it/480x260">
-              <h2>Nombre del Evento</h2>
+          <div class="col-md-7">            
+          	<img class="img-responsive" src="https://placehold.it/600x292" >
+          </div>   
+          <div class="col-md-5">
+          	<div class="well w3-card-2">
+            	<h3 class="">Conferencia magistral: Administracion de Recursos</h3>            
+            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            	quis nostrud exercitation ullamco laboris nisi ut al</p>
+            	<a class="btn btn-link w3-green btn-block">Suscribirse</a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <h2>Nombre del Evento</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              <br>Ut enim ad minim veniam, quis nostrud</p>
-          </div>
+          </div>         
         </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <div class="well">
+          <div class="col-md-8">           
+            <div class="well w3-card-2">            
               <h4>Descripcion</h4>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus
                 ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
@@ -101,7 +102,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="well">
+            <div class="well w3-card-2">
               <h4>Fecha y Hora</h4>
               <p>sáb, 22/10/2016, 09:00 – jue, 27/10/2016, 21:00 Hora estándar de Perú
                 Hora de Perú</p>
@@ -117,35 +118,56 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div id="map" style="width:100%;height:450px"></div>
+            <div class="w3-card-8" id="map" style="width:100%;height:450px"></div>
           </div>
         </div>
       </div>
     </div>
-
     <script>
-	function myMap() {
-	  var mapCanvas = document.getElementById("map");
-	  var center = new google.maps.LatLng(-12.057, -77.085); 
-	  var mapOptions = {
-	    center: center, 
-	    zoom: 14,
-	    scrollwheel: false	
-	  }
-	  var map = new google.maps.Map(mapCanvas, mapOptions);
-	  var marker = new google.maps.Marker({
-	  	position:center,
-	  	draggable: true
-	  });
-	  marker.setMap(map);
+  		function myMap() {
+			var mapCanvas = document.getElementById("map");
+			var center = new google.maps.LatLng(-12.057, -77.085);
+		
+			var mapOptions = {
+				center: center, 
+				zoom: 14,
+				scrollwheel: false	
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions);
+			var marker = new google.maps.Marker({
+				position:center,
+				draggable: true
+			});
 
-	  marker.addListener("dragend",function(e) {
-	  	alert(e.latLng)
-	  })
-	}
-	</script>
 
-	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+			var info = new google.maps.InfoWindow({
+				content: "<h3>Hola Mundo</h3>"+
+						"<p> Soy un infoWindow </p>"+
+						"<a class='btn btn-link' target='_blank' href='https://developers.google.com/maps/documentation/javascript/3.exp/reference?hl=es-419#InfoWindow'>Conoceme</a>"
+
+
+	
+			});	
+
+			marker.setMap(map);
+
+
+			var markerEvent = function(e) {
+				info.open(map,marker);
+			}
+
+			marker.addListener("click",function(e){
+
+				info.open(map,marker);
+
+			});
+
+		
+
+  		}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
   
 
 </body></html>
